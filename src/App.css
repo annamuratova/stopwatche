@@ -1,0 +1,77 @@
+
+
+
+  .timer-container{
+    background-color: #080808;
+    margin: 30px 10px;
+    padding: 50px 30px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15), 0 15px 90px 30px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h1{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 600;
+    text-align: center;
+  }
+  h1 span{
+    color: rgb(172, 112, 230);
+  }
+  .timer-col{
+    margin: 0 40px;
+    text-align: center;
+    min-width: 90px;
+  }
+  .timer-label{
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    font-size:0.8rem;
+    margin-top: 10px;
+  }
+
+  .btn-success{
+    background-color: rgb(118, 204, 118);
+  }
+  .btn-danger{
+    background-color: red;
+  }
+  .btn-secondary{
+    background-color: #c0b2b2;
+  }
+  .btn-warning{
+    background-color: rgba(255, 166, 0, 0.936);
+  }
+  .intervals{
+    height: 110px;
+    padding: 30px 30px;
+    flex-direction: column;
+    overflow-y: scroll;
+    color: rgb(123, 123, 226);
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+  .intervals p{
+    margin: 5px;;
+  }
+
+   .intervals::-webkit-scrollbar{
+    width: 4px;
+  }
+  .intervals::-webkit-scrollbar-thumb{
+    background:yellow;
+    border-radius: 3px;
+  } 
+
+  @media(max-width:825px){
+    .timer-container{
+      flex-direction: column;
+      padding: 40px 25px;
+    }
+    .timer-col+, .timer-col{
+      margin-top: 20px;
+    }
+  }
